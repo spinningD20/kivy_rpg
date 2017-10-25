@@ -1,0 +1,9 @@
+<npc display_name="Roberto" id_name="robmeister">
+    <action_set order="2" flag_required="testing">
+        <action order="2" type="dialogue" text="I'm talking!  Wow!"/>
+        <action order="3" type="dialogue" text="You can go away now."/>
+    </action_set>
+    <action_set order="1" flag_required="-insulted_rob">
+        <action order="1" type="dialogue" text="this won't work right now, flags aren't really implemented yet!"/>
+    </action_set>
+</npc>

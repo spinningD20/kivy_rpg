@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" nextobjectid="17">
+ <tileset firstgid="1" name="16x16" tilewidth="16" tileheight="16" tilecount="1920" columns="32">
+  <image source="../images/tilesets/16x16.bmp" width="512" height="960"/>
+ </tileset>
+ <layer name="below" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJwTZWBgECUSixHAyOqwqRfFoo5Y82glRk9/YAtPdDEApzYIbg==
+  </data>
+ </layer>
+ <layer name="sprite_layer" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgwkAAAGQAAE=
+  </data>
+ </layer>
+ <layer name="above" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgwkAAAGQAAE=
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="7" name="from_starting_map" type="entrance" x="80" y="128" width="16" height="16">
+   <properties>
+    <property name="facing" value="down"/>
+   </properties>
+  </object>
+  <object id="15" name="to_starting_map" type="floor_entity" x="80" y="144" width="16" height="16">
+   <properties>
+    <property name="action_xml" value="map_2-to-start.xml"/>
+   </properties>
+  </object>
+  <object id="16" name="Roberto the Talker" type="npc" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="accessory1" value="accessory_id"/>
+    <property name="accessory2" value="accessory2_id"/>
+    <property name="action_xml" value="roberto.xml"/>
+    <property name="body" value="armor_id"/>
+    <property name="current_guard" value="10"/>
+    <property name="current_hit_points" value="40"/>
+    <property name="current_power" value="10"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="10"/>
+    <property name="current_spirit_points" value="25"/>
+    <property name="soul_compat_range" type="int" value="2"/>
+    <property name="soul_compat_value" type="int" value="1"/>
+    <property name="damage" value="10"/>
+    <property name="faction" value="neutral"/>
+    <property name="full_guard" value="10"/>
+    <property name="full_hit_points" value="50"/>
+    <property name="full_power" value="10"/>
+    <property name="full_speed" value="10"/>
+    <property name="full_spirit" value="10"/>
+    <property name="full_spirit_points" value="50"/>
+    <property name="head" value="helmet_id"/>
+    <property name="id" value="abc"/>
+    <property name="left_hand" value="sword_id"/>
+    <property name="right_hand" value="shield_id"/>
+    <property name="sprite" value="clyde"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

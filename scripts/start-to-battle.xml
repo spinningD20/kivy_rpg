@@ -1,0 +1,5 @@
+<npc>
+    <action_set order="1" interaction="none" pausing="true" flag_required="testing">
+        <action order="1" type="map_change" map_name="battle_testing.tmx" entrance_name="from_starting_map"/>
+    </action_set>
+</npc>

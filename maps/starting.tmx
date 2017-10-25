@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.0.3" orientation="orthogonal" renderorder="right-down" width="40" height="40" tilewidth="16" tileheight="16" nextobjectid="19">
+ <tileset firstgid="1" name="overworld" tilewidth="16" tileheight="16" tilecount="189" columns="21">
+  <image source="../images/tilesets/overworld.png" width="336" height="144"/>
+  <terraintypes>
+   <terrain name="grass" tile="-1"/>
+   <terrain name="sand" tile="-1"/>
+   <terrain name="water" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain="2,2,2,0"/>
+  <tile id="1" terrain="2,2,0,0"/>
+  <tile id="2" terrain="2,2,0,2"/>
+  <tile id="3" terrain="0,0,0,2"/>
+  <tile id="4" terrain="0,0,2,0"/>
+  <tile id="21" terrain="2,0,2,0"/>
+  <tile id="22" terrain="0,0,0,0"/>
+  <tile id="23" terrain="0,2,0,2"/>
+  <tile id="24" terrain="0,2,0,0"/>
+  <tile id="25" terrain="2,0,0,0"/>
+  <tile id="42" terrain="2,0,2,2"/>
+  <tile id="43" terrain="0,0,2,2"/>
+  <tile id="44" terrain="0,2,2,2"/>
+  <tile id="63" terrain="0,0,0,1"/>
+  <tile id="64" terrain="0,0,1,1"/>
+  <tile id="65" terrain="0,0,1,0"/>
+  <tile id="66" terrain="1,1,1,0"/>
+  <tile id="67" terrain="1,1,0,1"/>
+  <tile id="70" terrain="2,2,2,2"/>
+  <tile id="84" terrain="0,1,0,1"/>
+  <tile id="85" terrain="1,1,1,1"/>
+  <tile id="86" terrain="1,0,1,0"/>
+  <tile id="87" terrain="1,0,1,1"/>
+  <tile id="88" terrain="0,1,1,1"/>
+  <tile id="105" terrain="0,1,0,0"/>
+  <tile id="106" terrain="1,1,0,0"/>
+  <tile id="107" terrain="1,0,0,0"/>
+  <tile id="126" terrain="2,2,2,1"/>
+  <tile id="127" terrain="2,2,1,1"/>
+  <tile id="128" terrain="2,2,1,2"/>
+  <tile id="129" terrain="1,1,1,2"/>
+  <tile id="130" terrain="1,1,2,1"/>
+  <tile id="147" terrain="2,1,2,1"/>
+  <tile id="149" terrain="1,2,1,2"/>
+  <tile id="150" terrain="1,2,1,1"/>
+  <tile id="151" terrain="2,1,1,1"/>
+  <tile id="168" terrain="2,1,2,2"/>
+  <tile id="169" terrain="1,1,2,2"/>
+  <tile id="170" terrain="1,2,2,2"/>
+ </tileset>
+ <layer name="below" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztmOtNw0AQhC8QWnAA0UEgtOAEJCrg1QKvFkDQAkS0ADTJnXQjhvXu+mwcwg9+jGQnxPfdzu7emkkIYfKvX9eMrg//AI9UHTWPWgzwrFXs7zTqLOp8gPgPKeyV+dbhr7fmLPPdZT7pNe7nYbgc6OvvRdSl8Dp9d5s/2wv9c2AIPnAw31XUcY7vUdTNGvgSwzVxyFrB9yVsq8xfjuOqfWzbh/Y9+Dwfx1H7WVu/7LPWB5kn6SDqJGoUtbsGPvZ2TDxSlbKHVcazDs3eshO1SUwpZhtZHDv83dRgBH9XJj6X4O2L8HfHYJLazntgRnDBgyFyj2tjbMRjJq5lHlTKZyfG77vypTNkQc9Hnnk5hthBU4WtJH51+H6WslLucW9mv9gj3DMr50AS52wJH7gSw2PUu9BT9vVY4fNUGeuBV3J63oHrQ1nnOTRnA1m7mjiWmvdyjx7f0lnnLccQswFyUPqmifcgea36YMFXj48ZX0K3WVrzcmTcy99yrmm+aj7zfFWHZh1Z8ynnQyW8xb21N6+mtBiiB6LnsOA92BfKervEN6J7z4eSekQMETvUi8Yoz0LvPEEu9uW7j3rIehXrtwnxLFmvLY8tj5+d9Vmcz1zviCHPYn3ODyuGpXxL8ZuUpzz3p+djxtFiUdILtN+18cnenvLhNTRzL/FVoRkLMJf0Ky2Gb6F55rFkb0Ls5DtAerY8r7lGuvTT0p6j1RHHrg5ffabtTCzhs1gtXlnbnHOJjfuM9z7Qh0/znnnAJPsJz2Q803o9bDQQH3ILs5YnjmVb7KxZzJJ8b0ROp1pJcxL+Z+DpJjTfMSxNe8SKexVfl+y1lKtv/slexdfoBzxvWu/pXdSVj3uV17f68vyU76frlQq58wly6xxw
+  </data>
+ </layer>
+ <layer name="sprite_layer" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1bsNgCAUhWFabW2NLuY8auUC6g5q6XTegoJCTXxxwfxfchJCwwkQMOa/Ku0CF9SSxqZV7HG0Z71ksBn91TmVOeMQ+7kmyWyzKHcJ3d4d7Hbm1q+LvMjXW5RIUk9r3VFISu0SkYnpHwMAAGHLtQvgEc4PAIB7NtLtDXA=
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="7" name="from_map_2" type="entrance" x="288" y="128" width="16" height="16">
+   <properties>
+    <property name="facing" value="down"/>
+   </properties>
+  </object>
+  <object id="8" name="clyde" type="player" x="240" y="112" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="player"/>
+    <property name="max_hp" value="55"/>
+    <property name="movement_type" value="wander"/>
+    <property name="sprite" value="clyde.png"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+  <object id="15" name="to_map_2" type="floor_entity" x="288" y="112" width="16" height="16">
+   <properties>
+    <property name="action_xml" value="start-to-map_2.xml"/>
+   </properties>
+  </object>
+  <object id="16" name="to_battle_map" type="floor_entity" x="240" y="64" width="16" height="16">
+   <properties>
+    <property name="action_xml" value="start-to-battle.xml"/>
+   </properties>
+  </object>
+  <object id="17" name="from_battle_map" type="entrance" x="240" y="80" width="16" height="16">
+   <properties>
+    <property name="facing" value="down"/>
+   </properties>
+  </object>
+  <object id="18" name="nest_1" type="nest_entity" x="368" y="112" width="16" height="16">
+   <properties>
+    <property name="capacity" type="int" value="100"/>
+    <property name="spawn_rate" type="int" value="20"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="above" width="40" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAMCXARkAAAE=
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,178 @@
+#<Widget>:
+#    canvas.after:
+#        Line:
+#            rectangle: self.x+1,self.y+1,self.width-1,self.height-1
+#            dash_offset: 5
+#            dash_length: 3
+
+<TileMapWidget>:
+    size_hint: None, None
+
+<FogOfWarCell>:
+    size_hint: None, None
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: root.color
+
+<CharacterButton@Button>:
+    size_hint_y: None
+    height: '60dp'
+    font_size: '32dp'
+    color: [.5, .7, .9, 1]
+    background_color: [.3, .3, .3, 1]
+
+<NavButton>:
+    size_hint_y: None
+    height: '60dp'
+    font_size: '32dp'
+    color: [.3, .7, .5, 1]
+    background_color: [.3, .3, .3, 1]
+
+<Notification>:
+    size_hint: .4, .3
+    GridLayout:
+        cols: 1
+        Label:
+            text: root.message
+            size_hint_y: None
+            text_size: self.size
+        Widget:
+        BoxLayout:
+            size_hint_y: None
+            height: dp(40)
+            Button:
+                text: 'OK'
+                on_press:
+                    root.dismiss()
+
+<TitleMenu>:
+    name: 'TitleMenu'
+    on_enter: print('title menu, coming right up')
+    FloatLayout:
+        id: floater
+        opacity: .65
+        Image:
+            source: 'images/title_background.png'
+            size_hint: 1.8, 1.8
+            allow_stretch: True
+            pos: 0.0 - self.width / 4.25, 0.0 - self.height / 4
+    GridLayout:
+        cols: 2
+        GridLayout:
+            cols: 1
+            size_hint_x: None
+            width: self.parent.width / 3.0
+            padding: 10
+            spacing: 10
+            Widget:
+            NavButton:
+                text: 'Refresh Seed Data'
+                on_release: app.reseed()
+            NavButton:
+                text: 'New Game'
+                on_release: app.manager.current = 'NewGame'
+            NavButton:
+                text: 'Load Game'
+                on_release: app.manager.current = 'LoadGame'
+            NavButton:
+                text: 'Quit'
+                on_release: app.stop()
+            Widget:
+
+<NewGame>:
+    name: 'NewGame'
+    GridLayout:
+        cols: 3
+        GridLayout:
+            cols: 1
+            spacing: 10
+            padding: 10
+            Widget:
+            CharacterButton:
+                text: 'Clyde'
+                on_release: app.new_game('clyde')
+            Widget:
+            NavButton:
+                text: 'Back'
+                on_release: app.manager.current = 'TitleMenu'
+            Widget:
+        Widget:
+        Widget:
+
+<LoadGame>:
+    name: 'LoadGame'
+    GridLayout:
+        cols: 3
+        GridLayout:
+            cols: 1
+            Widget:
+            ScrollView:
+                size_hint_y: None
+                height: '400dp'
+                GridLayout:
+                    id: save_choices
+                    spacing: 10
+                    padding: 10
+                    cols: 1
+                    size_hint_y: None
+                    height: self.minimum_height
+            Widget:
+            NavButton:
+                text: 'Back'
+                on_release: app.manager.current = 'TitleMenu'
+            Widget:
+        Widget:
+        Label:
+            text: 'Note: all saves are located at "{}".'.format(root.save_path)
+            text_size: self.size
+            valign: 'middle'
+
+<MapLayer>:
+    size_hint: None, None
+    size: self.texture_size[0], self.texture_size[1]
+    allow_stretch: True
+    keep_ratio: False
+
+
+<Game>:
+    name: 'Game'
+    FloatLayout:
+        id: root_container
+        size_hint: 1, 1
+        MapScalar:
+            id: scalar
+            do_rotation: False
+            do_scale: False
+            do_translate: False
+            auto_bring_to_front: False
+
+            FloatLayout:
+                id: container
+        Label:
+            id: counter
+            text: 'COUNTER HERE'
+            pos: 30, 30
+            size_hint: None, None
+            size: 50, 50
+
+
+<DialogueBox>:
+    size_hint: .95, .4
+    title: root.name and root.name + ':' or ''
+    title_size: '32dp'
+    opacity: .8
+    pos_hint: {'y': 0}
+    background_color: [0, 0, 0, 0]
+    separator_color: [0, 0, 0, 0]
+    GridLayout:
+        cols: 1
+        padding: '25dp'
+        Label:
+            font_size: '24dp'
+            text_size: self.size
+            valign: 'top'
+            halign: 'left'
+            text: root.text

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" nextobjectid="22">
+ <tileset firstgid="1" name="16x16" tilewidth="16" tileheight="16" tilecount="1920" columns="32">
+  <image source="../images/tilesets/16x16.bmp" width="512" height="960"/>
+ </tileset>
+ <layer name="below" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjY2BgYKMyFqMSHjVv1LxR80bNGzWPuuYRKrtJKesB3eQdsQ==
+  </data>
+ </layer>
+ <layer name="sprite_layer" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApIBwAGQAAB
+  </data>
+ </layer>
+ <layer name="above" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMApIBwAGQAAB
+  </data>
+ </layer>
+ <objectgroup name="objects">
+  <object id="7" name="from_starting_map" type="entrance" x="128" y="288" width="16" height="16">
+   <properties>
+    <property name="facing" value="down"/>
+   </properties>
+  </object>
+  <object id="15" name="to_starting_map" type="floor_entity" x="128" y="304" width="16" height="16">
+   <properties>
+    <property name="action_xml" value="battle-to-start.xml"/>
+   </properties>
+  </object>
+  <object id="16" name="enemy1" type="enemy" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="enemy"/>
+    <property name="max_hp" value="55"/>
+    <property name="sprite" value="clyde"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+  <object id="17" name="player2" type="player" x="112" y="256" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="player"/>
+    <property name="max_hp" value="55"/>
+    <property name="sprite" value="clyde"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+  <object id="18" name="enemy3" type="enemy" x="176" y="112" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="enemy"/>
+    <property name="max_hp" value="55"/>
+    <property name="sprite" value="clyde"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+  <object id="19" name="enemy4" type="enemy" x="224" y="64" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="enemy"/>
+    <property name="max_hp" value="55"/>
+    <property name="sprite" value="clyde"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+  <object id="20" name="enemy2" type="enemy" x="128.667" y="109.333" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="enemy"/>
+    <property name="max_hp" value="55"/>
+    <property name="sprite" value="clyde"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+  <object id="21" name="player" type="player" x="208" y="256" width="16" height="16">
+   <properties>
+    <property name="current_guard" value="5"/>
+    <property name="current_hp" value="50"/>
+    <property name="current_power" value="10"/>
+    <property name="current_sp" value="50"/>
+    <property name="current_speed" value="10"/>
+    <property name="current_spirit" value="5"/>
+    <property name="faction" value="player"/>
+    <property name="max_hp" value="55"/>
+    <property name="primary" type="bool" value="true"/>
+    <property name="sprite" value="clyde"/>
+    <property name="weight" value="180"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
