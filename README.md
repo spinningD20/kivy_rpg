@@ -1,5 +1,9 @@
 # Kivy RPG
 
+# NOTE: This is not an up-to-date version of my game project, and while I currently intend to open-source my game after it has been released for a few years, this does not reflect the game at this time.  I am keeping this here to show some examples of how to use Kivy or to use Python, that is about it.  Perhaps someday I will make an official engine, but this is not that day.  :) 
+
+-----
+
 Kivy RPG is my attempt at making an open, simple (tactical) RPG structure/engine using Kivy/Tiled.  It's still got a lot of
 work to go, but so far it features:
 
